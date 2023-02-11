@@ -10,15 +10,19 @@ public class Main {
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es: "+ saldoActual );
 
-        operativa_cuenta(cuenta1);
+        operativa_cuenta(cuenta1, 0);
     }
 
-	public static void operativa_cuenta(CCuenta cuenta1) {
+	public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
 		/** Resultado del apartado 2 
 		 * 
 		 * 	Es el resultado de usar extract en el apartado 2 del ejercicio.
 		 *		   
 		 * */
+		
+		// Lo normal sería cambiar el código para que el nuevo parametro 
+		// pase por el valor tanto a ingresar como a retirar... pero 
+		// no es el objetivo de esta tarea.
 		
 		try {
             cuenta1.retirar(2300);
