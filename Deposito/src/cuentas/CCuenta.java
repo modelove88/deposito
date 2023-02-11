@@ -9,22 +9,40 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /** Comentario de CCuenta.
+     * Primer comentario  
+    */
+    
     public CCuenta()
     {
     }
-
+   
+    /** Comentario de CCuenta.
+     * Segundo comentario  
+    */
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
+
     {
         setNombre(nom);
         setCuenta(cue);
         setSaldo(sal);
     }
 
+    /** Comentario de estado.
+     * Cuarto comentario  
+    */
+    
     public double estado()
+
     {
         return getSaldo();
     }
 
+    /** Comentario de Ingresar.
+     * Quinto comentario  
+    */
+    
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -32,6 +50,9 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
 
+    /** Comentario de retirar.
+     * Sexto comentario  
+    */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
